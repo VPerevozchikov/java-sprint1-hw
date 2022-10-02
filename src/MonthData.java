@@ -1,7 +1,5 @@
 public class MonthData {
 
-    String name = "SHKAF";
-    /*void printExample () {
-        System.out.println (name);
-    }*/
+    int[] days = new int[30];
+
 }
