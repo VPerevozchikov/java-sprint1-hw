@@ -35,15 +35,17 @@ public class StepTracker {
         Scanner scanner = new Scanner(System.in);
         System.out.println("За какой месяц Вы хотите внести кол-во шагов? Введите цифру от 0 до 11, где 0 - первый месяц, 11 - последний.");
         int i = scanner.nextInt();
-            if (i < 0 || i > 11) {
+
+        while (i < 0 || i > 11) {
                 System.out.println("Значение введено неверно.");
                 System.out.println("За какой месяц Вы хотите внести кол-во шагов? Введите цифру от 0 до 11, где 0 - первый месяц, 11 - последний.");
                 i = scanner.nextInt();
             }
 
+
         System.out.println("За какой день Вы хотите внести кол-во шагов? Введите цифру от 0 до 29, где 0 - первый день месяца, 29 - последний.");
         int j = scanner.nextInt();
-            if (j < 0 || j > 29) {
+            while (j < 0 || j > 29) {
                 System.out.println("Значение введено неверно.");
                 System.out.println("За какой день Вы хотите внести кол-во шагов? Введите цифру от 0 до 29, где 0 - первый день месяца, 29 - последний.");
                 j = scanner.nextInt();
@@ -51,7 +53,7 @@ public class StepTracker {
 
         System.out.println("Введите количество пройденных шагов.");
         int numStep = scanner.nextInt();
-            if (numStep < 0) {
+            while (numStep < 0) {
                 System.out.println("Количество пройденных шагов не может быть отрицательным.");
                 System.out.println("Введите количество пройденных шагов.");
                 numStep = scanner.nextInt();
